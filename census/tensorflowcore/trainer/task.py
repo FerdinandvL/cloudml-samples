@@ -41,7 +41,7 @@ class EvaluationRunHook(tf.train.SessionRunHook):
 
   Args:
     checkpoint_dir (string): Dir to store model checkpoints
-    metric_dir (string): Dir to store metrics like accuracy and auroc
+    metric_dict (dict): dictionary containing metrics like accuracy and auroc
     graph (tf.Graph): Evaluation graph
     eval_frequency (int): Frequency of evaluation every n train steps
     eval_steps (int): Evaluation steps to be performed
